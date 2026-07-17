@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Correlación Clínica — Medicina Semestre 2</title>
+<meta name="description" content="Herramienta interactiva para conectar los sistemas del cuerpo humano con casos clínicos reales.">
+<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" fill="none">
+        <path d="M16 27s-11-6.8-11-14.6C5 8 8 5 11.8 5c2.3 0 4.2 1.2 5.2 3 1-1.8 2.9-3 5.2-3C26 5 29 8 29 12.4 29 20.2 16 27 16 27z" stroke="#D62839" stroke-width="1.8"/>
+        <path d="M3 15h5l2-5 3 9 2-6 1.5 2h11.5" stroke="#F6F1E7" stroke-width="1.4" fill="none"/>
+      </svg>
+      Correlación Clínica
+    </a>
+    <nav class="site-nav">
+      <a href="#modulos">Módulos</a>
+      <a href="#como-funciona">Cómo funciona</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <span class="eyebrow">Medicina · Semestre 2</span>
+      <h1>De la fisiología <em>normal</em><br>al razonamiento <em>clínico</em>.</h1>
+      <p>Explora cada sistema del cuerpo humano tal como lo ves en clase, y luego ponlo a prueba con un caso clínico real. Diez módulos, un paciente por sistema, un juego de repaso al final de cada uno.</p>
+      <div class="hero-stats">
+        <div class="hero-stat"><b>10</b><span>Módulos / sistemas</span></div>
+        <div class="hero-stat"><b>1</b><span>Caso clínico por módulo</span></div>
+        <div class="hero-stat"><b>30</b><span>Preguntas de repaso c/u</span></div>
+      </div>
+    </div>
+    <div class="hero-visual hero-visual--svg">
+      <svg viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración del ciclo cardíaco con trazo de electrocardiograma">
+        <rect width="480" height="600" fill="#101B33"/>
+        <circle cx="380" cy="80" r="140" fill="#1B2A4A"/>
+        <circle cx="60" cy="520" r="180" fill="#16213D"/>
+        <path d="M240 220c-40-45-110-45-135-5-26 42 6 92 135 190 129-98 161-148 135-190-25-40-95-40-135 5z"
+          fill="none" stroke="#D62839" stroke-width="3.5"/>
+        <path d="M20 400h60l16-38 22 70 18-52 12 20h332"
+          fill="none" stroke="#F6F1E7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
+        <g stroke="#F6F1E7" stroke-width="1" opacity="0.18">
+          <line x1="0" y1="150" x2="480" y2="150"/>
+          <line x1="0" y1="250" x2="480" y2="250"/>
+          <line x1="0" y1="350" x2="480" y2="350"/>
+          <line x1="0" y1="450" x2="480" y2="450"/>
+        </g>
+      </svg>
+      <div class="hero-visual-caption">Módulo 01 — Sistema Cardiovascular · disponible ahora</div>
+    </div>
+  </div>
+</section>
+
+<section class="modules-section" id="modulos">
+  <div class="container">
+    <div class="section-head">
+      <div>
+        <span class="eyebrow">Mapa del semestre</span>
+        <h2>Los 10 módulos</h2>
+        <p>Cada módulo corresponde a una semana de clase. Se van habilitando en orden; por ahora, el Módulo 1 está completo.</p>
+      </div>
+    </div>
+
+    <div class="module-grid" id="module-grid"></div>
+  </div>
+</section>
+
+<section id="como-funciona" class="mod-section" style="border-bottom:none;">
+  <div class="container">
+    <div class="mod-section-head">
+      <span class="eyebrow">Cómo funciona cada módulo</span>
+      <h2>Tres pasos, un mismo hilo conductor</h2>
+    </div>
+    <div class="concept-row">
+      <div class="concept-card">
+        <span class="k">Paso 1</span>
+        <h4>Contenido de la semana</h4>
+        <p>Anatomía y fisiología normal del sistema, con las infografías y recursos vistos en clase.</p>
+      </div>
+      <div class="concept-card">
+        <span class="k">Paso 2</span>
+        <h4>Caso clínico</h4>
+        <p>Un paciente real te lleva paso a paso a razonar con lo que acabas de repasar, incluyendo una breve aproximación a la enfermedad.</p>
+      </div>
+      <div class="concept-card">
+        <span class="k">Paso 3</span>
+        <h4>Juego de repaso</h4>
+        <p>Preguntas cronometradas, estilo Kahoot, que integran caso clínico y teoría de la semana.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container">
+    <span>Correlación Clínica · Herramienta de estudio, Medicina Semestre 2</span>
+    <span>Módulo 1 de 10 activo</span>
+  </div>
+</footer>
+
+<script>
+const SYSTEMS = [
+  { n: 1, name: "Sistema Cardiovascular", desc: "El corazón de Carlos, 84 años, con disnea y edema.", href: "modulo1.html", live: true },
+  { n: 2, name: "Sistema Respiratorio", desc: "Próximamente disponible.", live: false },
+  { n: 3, name: "Sistema Digestivo", desc: "Próximamente disponible.", live: false },
+  { n: 4, name: "Sistema Renal y Urinario", desc: "Próximamente disponible.", live: false },
+  { n: 5, name: "Sistema Endocrino", desc: "Próximamente disponible.", live: false },
+  { n: 6, name: "Sistema Nervioso", desc: "Próximamente disponible.", live: false },
+  { n: 7, name: "Sistema Musculoesquelético", desc: "Próximamente disponible.", live: false },
+  { n: 8, name: "Sistema Hematológico", desc: "Próximamente disponible.", live: false },
+  { n: 9, name: "Sistema Inmune", desc: "Próximamente disponible.", live: false },
+  { n: 10, name: "Sistema Reproductor", desc: "Próximamente disponible.", live: false },
+];
+
+const grid = document.getElementById('module-grid');
+grid.innerHTML = SYSTEMS.map(s => `
+  <a href="${s.live ? s.href : '#'}" class="module-card ${s.live ? 'is-live' : 'is-soon'}" ${s.live ? '' : 'onclick="return false;" aria-disabled="true"'}>
+    <div class="module-card-top">
+      <span class="module-index">MÓDULO ${String(s.n).padStart(2,'0')}</span>
+      <span class="pill ${s.live ? 'pill--live' : 'pill--soon'}">${s.live ? 'Disponible' : 'Próximamente'}</span>
+    </div>
+    <h3>${s.name}</h3>
+    <p>${s.desc}</p>
+    <span class="module-card-cta">${s.live ? 'Entrar al módulo →' : 'Se habilita pronto'}</span>
+  </a>
+`).join('');
+</script>
+
+</body>
+</html>
