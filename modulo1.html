@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Módulo 1 · Sistema Cardiovascular — Correlación Clínica</title>
+<title>Módulo 1 · Sistema Cardiovascular — El Puente Clínico</title>
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
@@ -15,7 +15,7 @@
       <div>
         <span class="eyebrow">Módulo 01 · Semana 1</span>
         <h1>Sistema Cardiovascular</h1>
-        <p>Del corazón normal al corazón que falla: recorre la anatomía y fisiología de esta semana y aplícala al caso de Carlos, un paciente de 84 años con disnea y edema.</p>
+        <p>Conoce primero a Carlos, un paciente de 84 años con disnea y edema. Después vas a repasar los conceptos y la enfermedad que explican su caso.</p>
       </div>
       <div class="module-meta">
         <div><b>~35 min</b>tiempo estimado</div>
@@ -27,80 +27,120 @@
 
 <nav class="progress-rail">
   <div class="container">
-    <a href="#contenido" class="progress-step" data-step><span class="num">1</span> Contenido de la semana</a>
-    <a href="#caso" class="progress-step" data-step><span class="num">2</span> Caso clínico: Carlos</a>
-    <a href="#juego" class="progress-step" data-step><span class="num">3</span> Juego de repaso</a>
+    <a href="#caso" class="progress-step" data-step><span class="num">1</span> Caso clínico: Carlos</a>
+    <a href="#conceptos" class="progress-step" data-step><span class="num">2</span> Definición de conceptos</a>
+    <a href="#enfermedad" class="progress-step" data-step><span class="num">3</span> La enfermedad: falla cardíaca</a>
+    <a href="#juego" class="progress-step" data-step><span class="num">4</span> Juego de repaso</a>
   </div>
 </nav>
 
-<!-- ============ 1. CONTENIDO ============ -->
-<section class="mod-section" id="contenido">
-  <div class="container">
+<!-- ============ 1. CASO CLÍNICO ============ -->
+<section class="mod-section" id="caso">
+  <div class="container case-wrap">
     <div class="mod-section-head">
       <span class="eyebrow">Paso 1</span>
-      <h2>El corazón normal: anatomía y ciclo cardíaco</h2>
-      <p>Antes de conocer a Carlos, repasa cómo funciona un corazón sano. Esta es la base sobre la que vas a razonar todo el caso.</p>
+      <h2>Caso clínico: Carlos</h2>
+      <p>Avanza paso a paso. En cada punto vas a responder algo antes de conocer el siguiente dato, igual que en una consulta real. No te preocupes si no conoces todavía cada mecanismo a fondo: los vas a repasar justo después.</p>
     </div>
 
-    <div class="figure-grid cols-1">
-      <figure class="card-fig">
-        <img src="assets/img/ciclo-cardiaco.jpg" alt="Infografía del ciclo cardíaco humano: fases, válvulas, presiones y sistema de conducción eléctrica">
-        <figcaption><b>El ciclo cardíaco</b>Las 7 fases del ciclo, las 4 válvulas, el sistema de conducción (nodo SA, nodo AV, fibras de Purkinje) y la curva de presión-volumen del ventrículo izquierdo.</figcaption>
-      </figure>
+    <div class="case-patient">
+      <div class="case-avatar">C</div>
+      <div>
+        <h3>Carlos, 84 años</h3>
+        <p>Vive en zona rural de Tenjo, Cundinamarca, con su esposa. Consulta acompañado de su hija.</p>
+      </div>
     </div>
 
-    <div class="callout">
-      <b>Idea clave:</b> el nodo sinoauricular marca el ritmo (60–100 lpm), la contracción isovolumétrica genera la presión necesaria para abrir la válvula aórtica, y la fracción de eyección normal es del 55–60%. Vas a necesitar estos tres conceptos para entender lo que le pasa a Carlos.
+    <div class="case-step">
+      <span class="step-label">Caso clínico</span>
+      <p>Carlos es un adulto mayor de 84 años. Vive en un área rural del municipio de Tenjo, Cundinamarca con su esposa. Asiste con una de sus hijas al centro de salud. Consulta por <b>disnea</b> y <b>edema de miembros inferiores</b>. Tiene antecedentes de Diabetes Mellitus Tipo 2 e Infarto Agudo de Miocardio hace 5 años. Además, tiene antecedente de Tabaquismo, en el momento no activo.</p>
     </div>
 
-    <div class="mod-section-head" style="margin-top:56px;">
-      <span class="eyebrow">Fisiología de soporte</span>
-      <h2>Fluidos corporales y disnea</h2>
-      <p>Dos piezas fisiológicas que vas a necesitar para explicar los síntomas de Carlos: por qué se acumula líquido, y por qué falta el aire.</p>
+    <div class="case-step">
+      <span class="step-label">Datos relevantes</span>
+      <ul class="case-data-list">
+        <li><b>Edad</b> — 84 años</li>
+        <li><b>Vive en área rural</b> — ¿Qué otro aspecto sería importante conocer?</li>
+        <li><b>Síntomas mencionados</b>: Disnea y edema — ¿Qué lo hizo consultar? ¿Qué más preguntaría sobre estos síntomas?</li>
+        <li><b>Antecedentes</b>: Diabetes Mellitus tipo 2 — Infarto agudo de Miocardio hace 5 años — tabaquismo no activo</li>
+      </ul>
     </div>
+
+    <div style="margin-top:12px;">
+      <a href="#conceptos" class="btn btn-primary">Ir a Definición de conceptos →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 2. DEFINICIÓN DE CONCEPTOS ============ -->
+<section class="mod-section" id="conceptos">
+  <div class="container">
+    <div class="mod-section-head">
+      <span class="eyebrow">Paso 2</span>
+      <h2>Definición de conceptos</h2>
+      <p>Estos son los conceptos que necesitas dominar para explicar por completo lo que le pasa a Carlos: disnea, fluidos corporales, edema, tabaquismo y factores de riesgo.</p>
+    </div>
+
     <div class="figure-grid">
-      <figure class="card-fig">
-        <img src="assets/img/fluidos-corporales.jpg" alt="Infografía de distribución de fluidos corporales: líquido intracelular y extracelular">
-        <figcaption><b>Distribución de fluidos</b>Líquido intracelular (67%) vs. extracelular (33%): plasma, líquido intersticial y transcelular.</figcaption>
-      </figure>
       <figure class="card-fig">
         <img src="assets/img/disnea.jpg" alt="Infografía de definición y causas de la disnea">
         <figcaption><b>Disnea: definición y causas</b>Mecanismos fisiopatológicos y causas cardiológicas, respiratorias y sistémicas de la falta de aire.</figcaption>
       </figure>
-    </div>
-
-    <div class="figure-grid cols-1" style="margin-top:20px;">
       <figure class="card-fig">
         <img src="assets/img/disnea-historia-clinica.jpg" alt="Infografía de disnea: enfoque clínico en la historia, anamnesis, antecedentes, exploración física y diagnóstico">
-        <figcaption><b>Disnea: enfoque clínico en la historia</b>Cómo abordar la disnea en la anamnesis: inicio y curso, desencadenantes, antecedentes personales, exploración física dirigida y resumen diagnóstico. Esta es la guía que vas a aplicar en la entrevista con Carlos.</figcaption>
+        <figcaption><b>Disnea: enfoque clínico en la historia</b>Cómo abordar la disnea en la anamnesis: inicio y curso, desencadenantes, antecedentes, exploración física dirigida y resumen diagnóstico.</figcaption>
       </figure>
-    </div>
-
-    <div class="mod-section-head" style="margin-top:56px;">
-      <span class="eyebrow">Una breve aproximación a la enfermedad</span>
-      <h2>Cuando el sistema falla: insuficiencia cardíaca y edema</h2>
-      <p>Esto no es el foco de la semana, pero te da el contraste necesario para entender por qué el caso de Carlos se ve como se ve.</p>
-    </div>
-    <div class="figure-grid">
+      <figure class="card-fig">
+        <img src="assets/img/fluidos-corporales.jpg" alt="Infografía de distribución de fluidos corporales: líquido intracelular y extracelular">
+        <figcaption><b>Distribución de fluidos corporales</b>Líquido intracelular (67%) vs. extracelular (33%): plasma, líquido intersticial y transcelular.</figcaption>
+      </figure>
       <figure class="card-fig">
         <img src="assets/img/starling-edema.jpg" alt="Infografía de las fuerzas de Starling y el origen del edema">
         <figcaption><b>Fuerzas de Starling y edema</b>Por qué se filtra líquido hacia el intersticio y las 4 causas fisiopatológicas del edema.</figcaption>
-      </figure>
-      <figure class="card-fig">
-        <img src="assets/img/guia-ic.jpg" alt="Guía visual de conceptos clave de insuficiencia cardíaca">
-        <figcaption><b>Insuficiencia cardíaca: conceptos clave</b>Factores de riesgo, fracción de eyección y las 4 etapas de la insuficiencia cardíaca (AHA/ACC).</figcaption>
-      </figure>
-      <figure class="card-fig">
-        <img src="assets/img/factor-riesgo.jpg" alt="Infografía sobre qué es un factor de riesgo">
-        <figcaption><b>¿Qué es un factor de riesgo?</b>Contexto para entender por qué los antecedentes de Carlos importan clínicamente.</figcaption>
       </figure>
       <figure class="card-fig">
         <img src="assets/img/indice-tabaquismo.jpg" alt="Infografía del índice tabáquico (índice paquetes-año)">
         <figcaption><b>Índice tabáquico</b>Cómo se calcula el índice paquetes-año y por qué es relevante en el antecedente de tabaquismo de Carlos.</figcaption>
       </figure>
       <figure class="card-fig">
+        <img src="assets/img/factor-riesgo.jpg" alt="Infografía sobre qué es un factor de riesgo">
+        <figcaption><b>¿Qué es un factor de riesgo?</b>Contexto para entender por qué los antecedentes de Carlos importan clínicamente.</figcaption>
+      </figure>
+    </div>
+
+    <div class="callout" style="margin-top:32px;">
+      <b>Con estos seis conceptos ya puedes explicar:</b> por qué Carlos siente que le falta el aire, por qué se le hinchan las piernas, y por qué su historia de tabaquismo y sus antecedentes pesan tanto en el diagnóstico. Ahora vas a ver cómo se conecta todo esto con su enfermedad de fondo.
+    </div>
+
+    <div style="margin-top:40px;">
+      <a href="#enfermedad" class="btn btn-primary">Continuar a la enfermedad →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ 3. LA ENFERMEDAD: FALLA CARDÍACA ============ -->
+<section class="mod-section" id="enfermedad">
+  <div class="container">
+    <div class="mod-section-head">
+      <span class="eyebrow">Paso 3</span>
+      <h2>La enfermedad de Carlos: falla cardíaca</h2>
+      <p>Carlos tuvo un infarto hace 5 años. Ese evento dejó una cicatriz en su corazón que, con el tiempo, derivó en insuficiencia (falla) cardíaca: el corazón ya no bombea con la fuerza suficiente para satisfacer las demandas del cuerpo.</p>
+    </div>
+
+    <p style="max-width:70ch; margin-bottom:30px;">Después de un infarto, el tejido muscular dañado es reemplazado por tejido fibroso, que no se contrae. Esto reduce la fracción de eyección y desencadena mecanismos compensatorios (activación simpática, activación del sistema renina-angiotensina-aldosterona) que, sostenidos en el tiempo, terminan empeorando la función cardíaca. Así se explica el ciclo que llevó a Carlos, paso a paso, hasta la consulta de hoy.</p>
+
+    <div class="figure-grid">
+      <figure class="card-fig">
+        <img src="assets/img/ciclo-cardiaco.jpg" alt="Infografía del ciclo cardíaco humano: fases, válvulas, presiones y sistema de conducción eléctrica">
+        <figcaption><b>El ciclo cardíaco humano</b>Repasa el funcionamiento normal (las 7 fases, las 4 válvulas, el sistema de conducción y la fracción de eyección normal) para entender exactamente qué se altera en la falla cardíaca de Carlos.</figcaption>
+      </figure>
+      <figure class="card-fig">
+        <img src="assets/img/guia-ic.jpg" alt="Guía visual de conceptos clave de insuficiencia cardíaca">
+        <figcaption><b>Insuficiencia cardíaca: conceptos clave</b>Factores de riesgo, clasificación por fracción de eyección y las 4 etapas de la insuficiencia cardíaca (AHA/ACC), el marco que describe en qué etapa está Carlos.</figcaption>
+      </figure>
+      <figure class="card-fig">
         <img src="assets/img/autocuidado-ic.jpg" alt="Guía de autocuidado para pacientes con insuficiencia cardíaca">
-        <figcaption><b>Vivir con insuficiencia cardíaca</b>Autocuidado, control de peso y signos de alarma para un paciente como Carlos.</figcaption>
+        <figcaption><b>Vivir con insuficiencia cardíaca</b>Autocuidado, control de peso y signos de alarma, la parte del manejo que le corresponde a Carlos y a su familia en casa.</figcaption>
       </figure>
     </div>
 
@@ -113,43 +153,22 @@
         <svg width="20" height="20" viewBox="0 0 24 24" fill="none"><path d="M12 3v10.55a4 4 0 1 0 2 3.45V7h4V3h-6z" stroke="currentColor" stroke-width="1.6"/></svg>
       </div>
       <div style="flex:1;">
-        <b>Repaso en audio — Sistema Cardiovascular</b>
+        <b>Repaso en audio — Falla cardíaca en Carlos</b>
         <p class="placeholder-note">Se agregará aquí en cuanto subas el archivo de audio generado en NotebookLM (.mp3 o .wav).</p>
       </div>
     </div>
 
     <div style="margin-top:48px;">
-      <a href="#caso" class="btn btn-primary">Continuar al caso clínico →</a>
+      <a href="#juego" class="btn btn-primary">Continuar al juego de repaso →</a>
     </div>
   </div>
 </section>
 
-<!-- ============ 2. CASO CLÍNICO ============ -->
-<section class="mod-section" id="caso">
-  <div class="container case-wrap">
-    <div class="mod-section-head">
-      <span class="eyebrow">Paso 2</span>
-      <h2>Caso clínico: Carlos</h2>
-      <p>Avanza paso a paso. En cada punto vas a responder algo antes de conocer el siguiente dato, igual que en una consulta real.</p>
-    </div>
-
-    <div class="case-patient">
-      <div class="case-avatar">C</div>
-      <div>
-        <h3>Carlos, 84 años</h3>
-        <p>Vive en zona rural de Tenjo, Cundinamarca, con su esposa. Consulta acompañado de su hija.</p>
-      </div>
-    </div>
-
-    <div id="case-container"></div>
-  </div>
-</section>
-
-<!-- ============ 3. JUEGO ============ -->
+<!-- ============ 4. JUEGO ============ -->
 <section class="mod-section" id="juego" style="border-bottom:none;">
   <div class="container">
     <div class="mod-section-head">
-      <span class="eyebrow">Paso 3</span>
+      <span class="eyebrow">Paso 4</span>
       <h2>Juego de repaso</h2>
       <p>30 preguntas cronometradas que integran el caso de Carlos con la anatomía, histología y fisiología de esta semana.</p>
     </div>
@@ -160,12 +179,11 @@
 
 <footer class="site-footer">
   <div class="container">
-    <span>Correlación Clínica · Módulo 01 — Sistema Cardiovascular</span>
+    <span>El Puente Clínico · Módulo 01 — Sistema Cardiovascular</span>
     <a href="index.html" style="text-decoration:none;">← Volver al mapa de módulos</a>
   </div>
 </footer>
 
-<script src="assets/js/case-data.js"></script>
 <script src="assets/js/game-data.js"></script>
 <script src="assets/js/module.js"></script>
 

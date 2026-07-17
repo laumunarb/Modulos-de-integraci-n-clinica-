@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Correlación Clínica — Medicina Semestre 2</title>
+<title>El Puente Clínico — Medicina Semestre 2</title>
 <meta name="description" content="Herramienta interactiva para conectar los sistemas del cuerpo humano con casos clínicos reales.">
 <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -16,7 +16,7 @@
         <path d="M16 27s-11-6.8-11-14.6C5 8 8 5 11.8 5c2.3 0 4.2 1.2 5.2 3 1-1.8 2.9-3 5.2-3C26 5 29 8 29 12.4 29 20.2 16 27 16 27z" stroke="#D62839" stroke-width="1.8"/>
         <path d="M3 15h5l2-5 3 9 2-6 1.5 2h11.5" stroke="#F6F1E7" stroke-width="1.4" fill="none"/>
       </svg>
-      Correlación Clínica
+      El Puente Clínico
     </a>
     <nav class="site-nav">
       <a href="#modulos">Módulos</a>
@@ -38,20 +38,47 @@
       </div>
     </div>
     <div class="hero-visual hero-visual--svg">
-      <svg viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración del ciclo cardíaco con trazo de electrocardiograma">
-        <rect width="480" height="600" fill="#101B33"/>
-        <circle cx="380" cy="80" r="140" fill="#1B2A4A"/>
-        <circle cx="60" cy="520" r="180" fill="#16213D"/>
-        <path d="M240 220c-40-45-110-45-135-5-26 42 6 92 135 190 129-98 161-148 135-190-25-40-95-40-135 5z"
-          fill="none" stroke="#D62839" stroke-width="3.5"/>
-        <path d="M20 400h60l16-38 22 70 18-52 12 20h332"
-          fill="none" stroke="#F6F1E7" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
-        <g stroke="#F6F1E7" stroke-width="1" opacity="0.18">
-          <line x1="0" y1="150" x2="480" y2="150"/>
-          <line x1="0" y1="250" x2="480" y2="250"/>
-          <line x1="0" y1="350" x2="480" y2="350"/>
-          <line x1="0" y1="450" x2="480" y2="450"/>
+      <svg viewBox="0 0 480 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ilustración de un puente que conecta la teoría con la práctica clínica, con un trazo de electrocardiograma como tablero">
+        <defs>
+          <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#1B2A4A"/>
+            <stop offset="100%" stop-color="#101B33"/>
+          </linearGradient>
+        </defs>
+        <rect width="480" height="600" fill="url(#sky)"/>
+
+        <!-- riberas -->
+        <rect x="0" y="430" width="150" height="170" fill="#16213D"/>
+        <rect x="330" y="430" width="150" height="170" fill="#16213D"/>
+
+        <!-- torres del puente -->
+        <rect x="95" y="180" width="14" height="270" fill="#F6F1E7" opacity="0.9"/>
+        <rect x="371" y="180" width="14" height="270" fill="#F6F1E7" opacity="0.9"/>
+
+        <!-- cables -->
+        <g stroke="#D62839" stroke-width="2" opacity="0.75">
+          <line x1="102" y1="200" x2="30" y2="410"/>
+          <line x1="102" y1="200" x2="102" y2="410"/>
+          <line x1="102" y1="200" x2="180" y2="410"/>
+          <line x1="102" y1="200" x2="240" y2="410"/>
+          <line x1="378" y1="200" x2="450" y2="410"/>
+          <line x1="378" y1="200" x2="378" y2="410"/>
+          <line x1="378" y1="200" x2="300" y2="410"/>
+          <line x1="378" y1="200" x2="240" y2="410"/>
         </g>
+
+        <!-- tablero del puente = trazo de ECG -->
+        <path d="M0 410 h150 l16-45 22 85 18-65 14 25 h60 l14-25 18 65 22-85 16 45 h150"
+          fill="none" stroke="#F6F1E7" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+
+        <!-- reflejo en el agua -->
+        <g stroke="#F6F1E7" stroke-width="1" opacity="0.12">
+          <line x1="0" y1="460" x2="480" y2="460"/>
+          <line x1="0" y1="500" x2="480" y2="500"/>
+          <line x1="0" y1="540" x2="480" y2="540"/>
+        </g>
+
+        <circle cx="120" cy="90" r="34" fill="#D62839" opacity="0.9"/>
       </svg>
       <div class="hero-visual-caption">Módulo 01 — Sistema Cardiovascular · disponible ahora</div>
     </div>
@@ -100,7 +127,7 @@
 
 <footer class="site-footer">
   <div class="container">
-    <span>Correlación Clínica · Herramienta de estudio, Medicina Semestre 2</span>
+    <span>El Puente Clínico · Herramienta de estudio, Medicina Semestre 2</span>
     <span>Módulo 1 de 10 activo</span>
   </div>
 </footer>
@@ -109,14 +136,14 @@
 const SYSTEMS = [
   { n: 1, name: "Sistema Cardiovascular", desc: "El corazón de Carlos, 84 años, con disnea y edema.", href: "modulo1.html", live: true },
   { n: 2, name: "Sistema Respiratorio", desc: "Próximamente disponible.", live: false },
-  { n: 3, name: "Sistema Digestivo", desc: "Próximamente disponible.", live: false },
-  { n: 4, name: "Sistema Renal y Urinario", desc: "Próximamente disponible.", live: false },
-  { n: 5, name: "Sistema Endocrino", desc: "Próximamente disponible.", live: false },
-  { n: 6, name: "Sistema Nervioso", desc: "Próximamente disponible.", live: false },
-  { n: 7, name: "Sistema Musculoesquelético", desc: "Próximamente disponible.", live: false },
-  { n: 8, name: "Sistema Hematológico", desc: "Próximamente disponible.", live: false },
-  { n: 9, name: "Sistema Inmune", desc: "Próximamente disponible.", live: false },
-  { n: 10, name: "Sistema Reproductor", desc: "Próximamente disponible.", live: false },
+  { n: 3, name: "Sistema Gastrointestinal", desc: "Próximamente disponible.", live: false },
+  { n: 4, name: "Sistema Renal", desc: "Próximamente disponible.", live: false },
+  { n: 5, name: "Sistema Neurológico", desc: "Próximamente disponible.", live: false },
+  { n: 6, name: "Sistema Tegumentario", desc: "Próximamente disponible.", live: false },
+  { n: 7, name: "Sistema Endocrinológico", desc: "Próximamente disponible.", live: false },
+  { n: 8, name: "Sistema Reproductor", desc: "Próximamente disponible.", live: false },
+  { n: 9, name: "Sistema Osteomuscular", desc: "Próximamente disponible.", live: false },
+  { n: 10, name: "Sistema Hematológico e Inmune", desc: "Próximamente disponible.", live: false },
 ];
 
 const grid = document.getElementById('module-grid');

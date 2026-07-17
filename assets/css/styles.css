@@ -522,6 +522,21 @@ figure.card-fig figcaption b{ color: var(--ink); display:block; margin-bottom:2p
 .case-patient h3{ font-family: var(--font-display); margin: 0 0 4px; font-size: 1.3rem; }
 .case-patient p{ margin:0; color: rgba(246,241,231,0.7); font-size: 0.9rem; }
 
+.case-data-list{
+  margin: 0;
+  padding-left: 0;
+  list-style: none;
+  display: grid;
+  gap: 14px;
+}
+.case-data-list li{
+  padding: 14px 16px;
+  background: var(--parchment-dim);
+  border-radius: 8px;
+  font-size: 0.96rem;
+}
+.case-data-list li b{ color: var(--navy-deep); }
+
 .case-step{
   background: var(--white);
   border: 1px solid var(--line);
